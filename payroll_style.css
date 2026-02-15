@@ -1,0 +1,192 @@
+/* payroll_style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    margin-bottom: 15px;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td:first-child {
+    width: 40%;
+}
+
+p {
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #764ba2;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 30px 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Payslip Results Styling */
+h3 {
+    color: white;
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* PHP Output Styling */
+body > h3 + * {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Error Message Styling */
+body > *:last-child {
+    color: white;
+    background: #e74d3c00;
+    padding: 15px 25px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    
+    form {
+        padding: 25px;
+    }
+    
+    td:first-child {
+        width: 35%;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    
+    input[type="submit"] {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+/* Animation for form appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: fadeIn 0.5s ease-out;
+}
