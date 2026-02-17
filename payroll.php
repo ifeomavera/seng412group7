@@ -60,7 +60,6 @@
                 echo "Invalid Wage Amount";
 
             }
-            
             else{
 
                 echo "<h3>Payslip for $name</h3>";
