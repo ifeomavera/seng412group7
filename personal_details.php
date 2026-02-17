@@ -58,6 +58,13 @@ $group_members = [
         "hobbies" => "Reading, Writing"
     ],
     [
+        "name" => "Ezepue Elvis Ikemsinachi", 
+        "blood_group" => "O+", 
+        "state" => "Anambra State", 
+        "phone" => "09050281754", 
+        "hobbies" => "Watching Movies/Series"
+    ],
+    [
         "name" => "Pius Ezesinachi", 
         "blood_group" => "O+", 
         "state" => "Enugu State", 
