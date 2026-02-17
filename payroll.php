@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>PAYROLL FORM</title>
+        <link rel="stylesheet" href="payroll_style.css">
     </head>
     <body>
         <h1>SMALL COMPANY PAYROLL BY GROUP 7A</h1>
